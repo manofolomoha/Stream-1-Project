@@ -4,10 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+##[0.0.1.1] - 2016-11-25
+###Fixed
+-change log disply issue on github.  
+
 ##[0.0.1] - 2016-11-25
 ### Added
--Home.html.
--Main.css.
+-Home.html.  
+-Main.css.  
 
 ## [0.0.0] - 2016-11-25
 ### Added
