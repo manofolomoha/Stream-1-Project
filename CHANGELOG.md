@@ -6,18 +6,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ##[0.2.0]
 ###Changed
--Finalised desktop UI for the New Post page
+-Finalised desktop UI for the "New Post" page
 
 ##[0.1.1]
 ###Added
 -Started the Create Post page
 
 ###Changed
--updated Main.css to add a signed in icon for future use
+-updated Main.css to add a "signed in" icon for future use
 
 ##[0.1.0] - 2016-11-26
 ###Changed
--Created UI for the hope page
+-Created UI for the home page
 
 ##[0.0.2] - 2016-11-25
 ###Added
