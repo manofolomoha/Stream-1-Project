@@ -1,0 +1,48 @@
+#logIn {
+	display: none;
+}
+
+#contentBox {
+	width: 800px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title {
+	margin-top: 40px;
+}
+
+#description {
+	margin-top: 40px;
+}
+
+#backButton {
+	color: #286090;
+	width: 10%;
+	height: 40px;
+}
+
+#backButton:hover {
+	background-color: #E2E2E2;
+}
+
+#backArrow {
+	display: inline-block;
+	float: left;
+	width: 10%;
+	position: relative;
+	top: 13px;
+	left: 2px;
+}
+
+#backText {
+	display: inline-block;
+	float: right;
+	width: 80%;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 12px;
+}

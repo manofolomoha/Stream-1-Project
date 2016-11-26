@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+##[0.1.1]
+###Added
+-Started the Create Post page  
+-Create_Post.html  
+-Create_Post.css  
+###Changed
+-Main.css
+
 ##[0.1.0] - 2016-11-26
 ###Changed
 -Created UI for the hope page:  

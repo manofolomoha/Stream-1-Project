@@ -39,6 +39,38 @@ p {
 	width: 10%;
 	height: 100%;
 }
+	
+	#signedIn {
+		display: inline-block;
+		float: right;
+		width: 10%;
+		height: 100%;
+		box-sizing: border-box;
+		font-size: 16px;
+		color: #FFF;
+		padding: 17px;
+		text-align: center;
+		margin: 0px;
+	}
+	
+	#signedInLabel {
+		position: relative;
+		display: none;
+		font-family: sans-serif;
+		width: 100%;
+		padding: 1px;
+		border: 1px solid #000;
+		background-color: #286090;
+		font-size: 14px;
+		color: #FFF;
+		box-sizing: border-box;
+		margin: 0px;
+	}
+	
+	#signedIn:hover > #signedInLabel {
+		display: block;
+	}
+
 
 .button {
 	width: 100%;
@@ -54,3 +86,8 @@ p {
 	.button:hover {
 		background-color: #286090;
 	}
+
+.text {
+	margin: 0px;
+	height: 100%;
+}
