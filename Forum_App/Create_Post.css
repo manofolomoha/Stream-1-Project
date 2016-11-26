@@ -46,3 +46,23 @@
 	padding-top: 8px;
 	padding-bottom: 12px;
 }
+
+#iconHolder {
+	position: relative;
+	top: 20px;
+	font-size: 20px;
+}
+
+.undo {
+	transform: scaleX(-1);
+}
+
+.textButton {
+	margin: 1px;
+	padding: 5px;
+}
+
+.textButton:hover {
+	background-color: #E2E2E2;
+	cursor: pointer;
+}

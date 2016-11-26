@@ -4,20 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+##[0.2.0]
+###Changed
+-Finalised desktop UI for the New Post page
+
 ##[0.1.1]
 ###Added
--Started the Create Post page  
--Create_Post.html  
--Create_Post.css  
+-Started the Create Post page
+
 ###Changed
--Main.css
+-updated Main.css to add a signed in icon for future use
 
 ##[0.1.0] - 2016-11-26
 ###Changed
--Created UI for the hope page:  
-	-Homepage.css  
-	-Home.html  
-	-Main.css  
+-Created UI for the hope page
 
 ##[0.0.2] - 2016-11-25
 ###Added
