@@ -6,6 +6,7 @@
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="Main.css">
 	<link rel="stylesheet" type="text/css" href="Homepage.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -14,11 +15,20 @@
 		<p class="button">Home</p>
 	</div>
 	<div id="searchBar">
+		<input type="search" name="Search..." class="form-control" id="searchInput" placeholder="Search...">
+	</div>
+	<div id="logIn">
+		<p class="button">Log In</p>
 	</div>
 </div>
 <div id="contentBox">
-	
+	<button class="btn btn-primary" id="sortButton">Sort by<span class="glyphicon glyphicon-triangle-bottom" id="dropArrow"></span></button>
+	<button class="btn btn-primary" id="postButton">New Post</button>
 </div>	
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </html>
