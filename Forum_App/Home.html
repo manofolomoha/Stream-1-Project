@@ -4,20 +4,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="Main.css">
-	<link rel="stylesheet" type="text/css" href="Homepage.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Main.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Homepage.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="mobileMain.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="mobileHomepage.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 
 <body>
 <div id="navBar">
 	<div id="homeButton">
+		<span class="glyphicon glyphicon-home mobileNavigation" id="mobileHome"></span>
 		<p class="button">Home</p>
 	</div>
 	<div id="searchBar">
 		<input type="search" name="Search..." class="form-control" id="searchInput" placeholder="Search...">
 	</div>
 	<div id="logIn">
+		<span class="mobileNavigation glyphicon glyphicon-user mobileNavigation" id="mobileUser"></span>
 		<p class="button">Log In</p>
 	</div>
 </div>
@@ -29,6 +33,6 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
 </html>

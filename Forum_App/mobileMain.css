@@ -8,16 +8,13 @@ p {
 	margin: 0px;
 }
 
-#mobileHome {
-	display: none;
-}
-
-#mobileUser {
-	display: none;
-}
-
 .mobileNavigation {
-	display: none;
+	font-size: 19px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left:15%;
+	position: absolute;
+	top: 0px;
 }
 
 #navBar {
@@ -35,7 +32,7 @@ p {
 #searchBar {
 	display: inline-block;
 	float: right;
-	width: 20%;
+	width: 80%;
 	height: 100%;
 }
 
@@ -78,27 +75,10 @@ p {
 		box-sizing: border-box;
 		margin: 0px;
 	}
-	
-	#signedIn:hover > #signedInLabel {
-		display: block;
-	}
-
 
 .button {
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-	font-size: 16px;
-	color: #FFF;
-	padding-top: 17px;
-	padding-bottom: 17px;
-	text-align: center;
-	margin: 0px;
+	display: none;
 }
-
-	.button:hover {
-		background-color: #286090;
-	}
 
 .text {
 	margin: 0px;

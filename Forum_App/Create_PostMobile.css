@@ -1,27 +1,10 @@
-#logIn {
-	display: none;
-}
-
-@media screen and (min-width: 800px){
-	#contentBox {
+#contentBox {
 	box-sizing: border-box;
-	width: 800px;
+	width: 90%;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	margin-left: auto;
-	margin-right: auto;
-}
-}
-
-@media screen and (max-width: 799px){
-	#contentBox {
-	box-sizing: border-box;
-	width: 600px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	margin-left: auto;
-	margin-right: auto;
-}
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #title {
@@ -34,12 +17,8 @@
 
 #backButton {
 	color: #286090;
-	width: 10%;
+	width: 30%;
 	height: 40px;
-}
-
-#backButton:hover {
-	background-color: #E2E2E2;
 }
 
 #backArrow {
@@ -57,7 +36,6 @@
 	width: 80%;
 	box-sizing: border-box;
 	font-size: 20px;
-	text-align: center;
 	padding-top: 8px;
 	padding-bottom: 12px;
 }
@@ -75,9 +53,4 @@
 .textButton {
 	margin: 1px;
 	padding: 5px;
-}
-
-.textButton:hover {
-	background-color: #E2E2E2;
-	cursor: pointer;
 }

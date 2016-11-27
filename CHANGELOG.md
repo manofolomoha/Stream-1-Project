@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+##[0.4.0] - 2016-11-27
+###Added
+- Media queries to all pages.
+- Mobile layouts for all pages.
+
+###Changed
+- changed bootstrap links to local. 
+
 ##[0.3.0] - 2016-11-26
 ###Added
 - Created Desktop layout for viewing Discussions

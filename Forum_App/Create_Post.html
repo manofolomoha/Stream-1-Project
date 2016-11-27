@@ -4,20 +4,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>New Post</title>
-	<link rel="stylesheet" type="text/css" href="Main.css">
-	<link rel="stylesheet" type="text/css" href="Create_Post.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Main.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Create_Post.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="mobileMain.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="Create_PostMobile.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 
 <body>
 <div id="navBar">
 	<div id="homeButton">
+		<span class="glyphicon glyphicon-home mobileNavigation" id="mobileHome"></span>
 		<p class="button">Home</p>
 	</div>
 	<div id="searchBar">
 		<input type="search" name="Search..." class="form-control" id="searchInput" placeholder="Search...">
 	</div>
 	<div id="logIn">
+		<span class="mobileNavigation glyphicon glyphicon-user mobileNavigation" id="mobileUser"></span>
 		<p class="button">Log In</p>
 	</div>
 	<div id="signedIn">
@@ -27,25 +31,26 @@
 		</div>
 	</div>
 </div>
-	<div id="contentBox">
-		<div id="backButton">
-			<span class="glyphicon glyphicon-chevron-left" id="backArrow"></span>
-				<a href="#"><p class="text" id="backText">Back</p></a>
-		</div>
-		<div class="form-group">
-			<input type="text" class="form-control" id="title" placeholder="Title">
-				<div id="iconHolder">
-					<span class="glyphicon glyphicon-repeat undo textButton"></span>
-					<span class="glyphicon glyphicon-repeat textButton"></span>
-					<span class="glyphicon glyphicon-bold textButton"></span>
-					<span class="glyphicon glyphicon-italic textButton"></span>
-				</div>
-			<textarea class="form-control" rows="8" id="description" placeholder="description"></textarea>
-		</div>
-		<div id="submit">
-			<button class="btn btn-primary">Submit</button>
-		</div>
+
+<div id="contentBox">
+	<div id="backButton">
+		<span class="glyphicon glyphicon-chevron-left" id="backArrow"></span>
+			<a href="#"><p class="text" id="backText">Back</p></a>
 	</div>
+	<div class="form-group">
+		<input type="text" class="form-control" id="title" placeholder="Title">
+			<div id="iconHolder">
+				<span class="glyphicon glyphicon-repeat undo textButton"></span>
+				<span class="glyphicon glyphicon-repeat textButton"></span>
+				<span class="glyphicon glyphicon-bold textButton"></span>
+				<span class="glyphicon glyphicon-italic textButton"></span>
+			</div>
+		<textarea class="form-control" rows="8" id="description" placeholder="description"></textarea>
+	</div>
+	<div id="submit">
+		<button class="btn btn-primary">Submit</button>
+	</div>
+</div>
 
 </body>
 
