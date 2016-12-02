@@ -16,7 +16,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ###Added
 - bower components (Angular and angular-route).
 - index.html.
-- .gitignore
 
 ###Changed
 - Sorted files.
