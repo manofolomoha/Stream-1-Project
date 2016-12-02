@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+##In Progress
+- currently working on the back button
+
+##[0.5.1] - 2016-12-2
+###Changed
+- converted the post creation page to a form.
+- began adding functionality to the post creation page. (See README)
+
 ##[0.5.0] - 2016-12-2
 ###Added
 - bower components (Angular and angular-route).

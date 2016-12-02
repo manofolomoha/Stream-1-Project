@@ -4,7 +4,8 @@ This Forum app is  being built as a coursework project.
 when completed, it will allow users to sign in, create discussions and post comments.
 
 ##Features.
-No functionality has been implemented yet. (See the Change Log)
+- On the Create Post page, hitting submit will log the content of the form to the console. This is mostly for testing putposes and will be removed in the future.
+- The "Back" button on the "Create Post" page is currently work-in progress.
 
 ##Known Issues.
 - When viewing pages in Mobile Layouts, the home-button icon doesn't appear, but the button remains functional

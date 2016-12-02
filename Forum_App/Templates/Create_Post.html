@@ -1,19 +1,18 @@
 <div id="contentBox">
 	<div id="backButton">
 		<span class="glyphicon glyphicon-chevron-left" id="backArrow"></span>
-			<a href="#"><p class="text" id="backText">Back</p></a>
+			<p class="text" id="backText">Back</p>
 	</div>
-	<div class="form-group">
-		<input type="text" class="form-control" id="title" placeholder="Title">
+	<form name="createPost" class="form-group" ng-submit="newPost()">
+		<input type="text" class="form-control" id="title" placeholder="Title" name="postTitle" ng-model="post.title" required>
 			<div id="iconHolder">
 				<span class="glyphicon glyphicon-repeat undo textButton"></span>
 				<span class="glyphicon glyphicon-repeat textButton"></span>
 				<span class="glyphicon glyphicon-bold textButton"></span>
 				<span class="glyphicon glyphicon-italic textButton"></span>
 			</div>
-		<textarea class="form-control" rows="8" id="description" placeholder="description"></textarea>
-	</div>
+		<textarea class="form-control" rows="8" id="description" placeholder="description" name="description" ng-model="post.description" required></textarea>
 	<div id="submit">
-		<button class="btn btn-primary">Submit</button>
+		<button type="submit" ng-disabled="createPost.$invalid" class="btn btn-primary">Submit</button>
 	</div>
-</div>
+</form>

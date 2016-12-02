@@ -36,6 +36,7 @@
 
 #backButton:hover {
 	background-color: #E2E2E2;
+	cursor: pointer;
 }
 
 #backArrow {
@@ -76,4 +77,8 @@
 .textButton:hover {
 	background-color: #E2E2E2;
 	cursor: pointer;
+}
+
+#submit {
+	margin-top: 20px;
 }
