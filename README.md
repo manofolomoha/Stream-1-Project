@@ -5,10 +5,10 @@ when completed, it will allow users to sign in, create discussions and post comm
 
 ##Features.
 - On the Create Post page, hitting submit will log the content of the form to the console. This is mostly for testing putposes and will be removed in the future.
-- The "Back" button on the "Create Post" page is currently work-in progress.
 
 ##Known Issues.
 - When viewing pages in Mobile Layouts, the home-button icon doesn't appear, but the button remains functional
+- The "Back" button on the "Create Post" page is currently work-in progress.
 
 ##Note:
 To view this app's current build, you must run http-server in the Forum_App folder.
