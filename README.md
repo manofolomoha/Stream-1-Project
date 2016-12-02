@@ -1,7 +1,7 @@
 # Forum App
 ##Overview.
 This Forum app is  being built as a coursework project.  
-when completed, it will allow users to sign in, create discussions and post cmments.
+when completed, it will allow users to sign in, create discussions and post comments.
 
 ##Features.
 No functionality has been implemented yet. (See the Change Log)
