@@ -1,0 +1,14 @@
+{
+  "name": "forum_app",
+  "description": "a simple forum app",
+  "main": "index.js",
+  "authors": [
+    "manofolomoha"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/manofolomoha/Stream-1-Project",
+  "devDependencies": {
+    "angular": "^1.5.9",
+    "angular-route": "^1.5.9"
+  }
+}

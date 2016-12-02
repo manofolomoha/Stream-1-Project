@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+##[0.5.0] - 2016-12-2
+###Added
+- bower components (Angular and angular-route).
+- index.html.
+- .gitignore
+
+###Changed
+- Sorted files.
+- Converted current pages to a Single Page Application.
+- updated read me.
+
 ##[0.4.0] - 2016-11-27
 ###Added
 - Media queries to all pages.

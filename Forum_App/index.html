@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="forumApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Css/Main.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Css/Homepage.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="Css/mobileMain.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="Css/mobileHomepage.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Css/View_Post.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="Css/View_PostMobile.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Css/Create_Post.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="Css/Create_PostMobile.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+</head>
+
+<body>
+<div id="navBar">
+	<div id="homeButton">
+		<a href="#/"><span class="glyphicon glyphicon-home mobileNavigation" id="mobileHome"></span></a>
+		<a href="#/"><p class="button">Home</p></a>
+	</div>
+	<div id="searchBar">
+		<input type="search" name="Search..." class="form-control" id="searchInput" placeholder="Search...">
+	</div>
+	<div id="logIn">
+		<span class="mobileNavigation glyphicon glyphicon-user mobileNavigation" id="mobileUser"></span>
+		<p class="button">Log In</p>
+	</div>
+</div>
+
+<div ng-view>
+</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Scripts/App.js"></script>
+<script type="text/javascript" src="Scripts/controller.js"></script>
+
+</html>

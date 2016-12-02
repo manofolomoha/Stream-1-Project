@@ -1,7 +1,3 @@
-#logIn {
-	display: none;
-}
-
 @media screen and (min-width: 800px){
 	#contentBox {
 	box-sizing: border-box;
