@@ -5,7 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ##In Progress
-- currently working on the back button
+- currently working on sign-in functionality.
+
+
+##[0.5.2] - 2016-12-5
+###Fixed
+- made the back button work.
 
 ##[0.5.1] - 2016-12-2
 ###Changed

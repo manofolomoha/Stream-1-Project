@@ -8,7 +8,6 @@ when completed, it will allow users to sign in, create discussions and post comm
 
 ##Known Issues.
 - When viewing pages in Mobile Layouts, the home-button icon doesn't appear, but the button remains functional
-- The "Back" button on the "Create Post" page is currently work-in progress.
 
 ##Note:
 To view this app's current build, you must run http-server in the Forum_App folder.
