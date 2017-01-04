@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html ng-app="forumApp">
 <head>
+	<title>Forum App</title>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Css/Main.css">
-	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Css/Homepage.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="Css/mobileMain.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="Css/mobileHomepage.css">
-	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Css/View_Post.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="Css/View_PostMobile.css">
-	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="Css/Create_Post.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="Css/Create_PostMobile.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/main.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/homepage.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/mobileMain.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/mobileHomepage.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/viewPost.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/viewPostMobile.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/createPost.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/createPostMobile.css">
+	<link rel="stylesheet" type="text/css" href="css/signUp.css">
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 </head>
 
 <body>
 <div id="navBar">
 	<div id="homeButton">
-		<a href="#/"><span class="glyphicon glyphicon-home mobileNavigation" id="mobileHome"></span></a>
-		<a href="#/"><p class="button">Home</p></a>
+		<a ui-sref="/"><span class="glyphicon glyphicon-home mobileNavigation" id="mobileHome"></span></a>
+		<a ui-sref="/"><p class="button">Home</p></a>
 	</div>
 	<div id="searchBar">
 		<input type="search" name="Search..." class="form-control" id="searchInput" placeholder="Search...">
@@ -31,15 +34,63 @@
 	</div>
 </div>
 
-<div ng-view>
+<div id="signIn" class="grey">
+	<div id="close">
+		<span class="glyphicon glyphicon-remove" id="closeCross"></span>
+	</div>
+	<div id="signInBox">
+	<div id="signInSelect"><p class="selectorText">Sign in</p></div>
+	<div id="signUpSelect"><p class="selectorText">Sign up</p></div>
+	<div id="signInSheet">
+		<form name="loginUser" ng-submit="loginUser()" novalidate>
+            <div class="form-group">
+                <label>Name</label>
+                    <input type="text" name="name" class="form-control" ng-model="user.username" required>
+            </div>
+            <div class="form-group">
+            <label>Password</label>
+                <input type="password" name="password" class="form-control" ng-model="user.password" required>
+            </div>
+            <button type="submit" class="btn btn-primary" ng-disabled="loginUser.$invalid">Submit</button>
+        </form>
+	</div>
+	<div id="signUpSheet">
+		<form name="registerUser" ng-submit="registerUser()" novalidate>
+            <div class="form-group">
+                <label>Create Username</label>
+                    <input type="text" name="name" class="form-control" ng-model="newUser.username" required>
+            </div>
+            <div class="form-group">
+            <label>Create Password</label>
+                <input type="password" name="password" class="form-control" ng-model="newUser.password" required>
+            </div>
+            <button type="submit" class="btn btn-primary" ng-disabled="registerUser.$invalid">Submit</button>
+        </form>	
+    </div>
+	</div>
+</div>
+<div ui-view>
 </div>
 
-</body>
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDGmOUEr8uXOb05m9MpmdNZcwSr0H5fOQc",
+    authDomain: "forum-app-17081.firebaseapp.com",
+    databaseURL: "https://forum-app-17081.firebaseio.com",
+    storageBucket: "forum-app-17081.appspot.com",
+    messagingSenderId: "483040706899"
+  };
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="Scripts/App.js"></script>
-<script type="text/javascript" src="Scripts/controller.js"></script>
-<script type="text/javascript" src="Scripts/BackController.js"></script>
+<script src="services/app.js"></script>
+<script src="services/signInDisplay.js"></script>
+<script src="services/newPost.js"></script>
+<script src="services/signIn.js"></script>
+
+</body>
 
 </html>

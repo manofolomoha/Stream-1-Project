@@ -51,6 +51,10 @@ p {
 	width: 10%;
 	height: 100%;
 }
+
+	#logIn:hover {
+		cursor: pointer;
+	}
 	
 	#signedIn {
 		display: inline-block;

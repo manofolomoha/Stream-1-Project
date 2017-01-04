@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ##In Progress
 - currently working on sign-in functionality.
 
+##todo
+- clean-up signInDisplay.js to add and remove classes, instead of what it currently is
+
+##[0.6.0]
+###Added
+- began the sign-infunctionality using firebase
+
+###changed
+- changed from using angular-routing to ui-router
+- general re-structuring of the folders
 
 ##[0.5.2] - 2016-12-5
 ###Fixed

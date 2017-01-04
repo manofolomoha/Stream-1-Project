@@ -1,7 +1,7 @@
 <div id="contentBox">
-	<div id="backButton">
+	<div id="backButton"><a ui-sref='/'>
 		<span class="glyphicon glyphicon-chevron-left" id="backArrow"></span>
-			<p class="text" id="backText">Back</p>
+			<p class="text" id="backText">Back</p></a>
 	</div>
 	<form name="createPost" class="form-group" ng-submit="newPost()">
 		<input type="text" class="form-control" id="title" placeholder="Title" name="postTitle" ng-model="post.title" required>

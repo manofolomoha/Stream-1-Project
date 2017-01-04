@@ -1,0 +1,41 @@
+<link rel="stylesheet" type="text/css" href="../css/signUp.css">
+<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+<body class="grey">
+
+<div id="signInBox">
+	<div id="signInSelect"><p class="selectorText">Sign in</p></div>
+	<div id="signUpSelect"><p class="selectorText">Sign up</p></div>
+	<div id="SignInSheet">
+		<form name="loginUser" ng-submit="loginUser()" novalidate>
+            <div class="form-group">
+                <label>Name</label>
+                    <input type="text" name="name" class="form-control" ng-model="user.username" required id="authUsername">
+            </div>
+            <div class="form-group">
+            <label>Password</label>
+                <input type="password" name="password" class="form-control" ng-model="user.password" required id="authPassword">
+            </div>
+            <button type="submit" class="btn btn-primary" ng-disabled="loginUser.$invalid" id="authenticateUser">Submit</button>
+        </form>
+	</div>
+	<div id="signUpSheet">
+		<form name="registerUser" ng-submit="registerUser()" novalidate>
+            <div class="form-group">
+                <label>Create Username</label>
+                    <input type="text" name="name" class="form-control" ng-model="newUser.username" required id="usernameIn">
+            </div>
+            <div class="form-group">
+            <label>Create Password</label>
+                <input type="password" name="password" class="form-control" ng-model="newUser.password" required id="passwordIn">
+            </div>
+            <button type="submit" class="btn btn-primary" ng-disabled="registerUser.$invalid" id="createUser">Submit</button>
+        </form>	</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="services/signIn.js"></script>
+
+</body>
