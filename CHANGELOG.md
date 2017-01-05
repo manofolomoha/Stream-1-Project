@@ -9,7 +9,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ##todo
 - add post-creation functionality
-- remove superfluous code and files
+
+##[0.6.2]
+###changed
+- tidied-up code and file-structure
 
 ##[0.6.1]
 ###Added

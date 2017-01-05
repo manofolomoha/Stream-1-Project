@@ -5,16 +5,15 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/main.css">
-	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/homepage.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/mobileMain.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/mobileHomepage.css">
-	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/viewPost.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/viewPostMobile.css">
-	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/createPost.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/createPostMobile.css">
-	<link rel="stylesheet" type="text/css" href="css/signUpPage.css">
-	<!--<link rel="stylesheet" type="text/css" href="css/signUp.css">-->
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/desktop/main.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/desktop/homepage.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/mobile/mobileMain.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/mobile/mobileHomepage.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/desktop/viewPost.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/mobile/viewPostMobile.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/desktop/createPost.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/mobile/createPostMobile.css">
+	<link rel="stylesheet" type="text/css" href="css/desktop/signUpPage.css">
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -37,46 +36,7 @@
 	</div>
 </div>
 
-<!--sign-in popup-->
-<!--
-<div id="signIn" class="grey">
-	<div id="close">
-		<span class="glyphicon glyphicon-remove" id="closeCross"></span>
-	</div>
-	<div id="signInBox">
-	<div id="signInSelect"><p class="selectorText">Sign in</p></div>
-	<div id="signUpSelect"><p class="selectorText">Sign up</p></div>
-	<div id="signInSheet">
-
-	<form name="existingUser" ng-submit="loginUser()" novalidate>
-            <div class="form-group">
-                <label>Name</label>
-                    <input type="text" name="name" class="form-control" ng-model="user.username" required>
-            </div>
-            <div class="form-group">
-            <label>Password</label>
-                <input type="password" name="password" class="form-control" ng-model="user.password" required>
-            </div>
-            <button type="submit" class="btn btn-primary" ng-disabled="loginUser.$invalid">Submit</button>
-        </form>
-	</div>
-	<div id="signUpSheet">
-		<form name="newUser" ng-submit="registerUser()" novalidate>
-            <div class="form-group">
-                <label>Create Username</label>
-                    <input type="text" name="name" class="form-control" ng-model="newUser.username" required>
-            </div>
-            <div class="form-group">
-            <label>Create Password</label>
-                <input type="password" name="password" class="form-control" ng-model="newUser.password" required>
-            </div>
-            <button type="submit" class="btn btn-primary" ng-disabled="registerUser.$invalid">Submit</button>
-        </form>	
-    </div>
-	</div>
-</div>-->
-
-<!--templade area-->
+<!--template area-->
 <div ui-view>
 </div>
 
