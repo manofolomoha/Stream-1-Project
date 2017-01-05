@@ -1,6 +1,6 @@
 forumApp.controller('postController',  function($scope) {
 
-	$scope.postContent = {[
+	/*$scope.postContent = {[
 
 		$scope.newPost = function() {
 			console.log("Form Submitted");
@@ -10,5 +10,17 @@ forumApp.controller('postController',  function($scope) {
     		console.log($scope.postContent.title);
     		console.log($scope.postContent.description);
         }
-    ]};
+    ]};*/
 });
+
+(function () {
+
+	const preObject = document.getElementById('object');
+	
+	const dbRefObject = firebase.database().ref().child('object');
+	
+	dbRefObject.on('value', snap => {
+		preObject.innterText = JSON.stringify(snap.val(), nul, 3);
+	});
+
+}());

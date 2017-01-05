@@ -1,41 +1,32 @@
-<link rel="stylesheet" type="text/css" href="../css/signUp.css">
-<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
-
-<body class="grey">
-
 <div id="signInBox">
-	<div id="signInSelect"><p class="selectorText">Sign in</p></div>
-	<div id="signUpSelect"><p class="selectorText">Sign up</p></div>
 	<div id="SignInSheet">
-		<form name="loginUser" ng-submit="loginUser()" novalidate>
+        <p>Log in as an existing user:</p>
+		<form name="existingUser" ng-submit="loginUser()" novalidate>
             <div class="form-group">
-                <label>Name</label>
-                    <input type="text" name="name" class="form-control" ng-model="user.username" required id="authUsername">
+                <label>Email</label>
+                    <input type="text" name="email" class="form-control" ng-model="user.email" required id="authEmail">
             </div>
             <div class="form-group">
             <label>Password</label>
                 <input type="password" name="password" class="form-control" ng-model="user.password" required id="authPassword">
             </div>
-            <button type="submit" class="btn btn-primary" ng-disabled="loginUser.$invalid" id="authenticateUser">Submit</button>
+            <button type="submit" class="btn btn-primary" ng-disabled="loginUser.$invalid" id="authenticateUser">Log in</button>
         </form>
 	</div>
 	<div id="signUpSheet">
-		<form name="registerUser" ng-submit="registerUser()" novalidate>
+        <p>Or create a new user:</p>
+		<form name="newUser" ng-submit="registerUser()" novalidate>
             <div class="form-group">
-                <label>Create Username</label>
-                    <input type="text" name="name" class="form-control" ng-model="newUser.username" required id="usernameIn">
+                <label>Email</label>
+                    <input type="text" name="name" class="form-control" ng-model="newUser.email" required id="emailIn">
             </div>
             <div class="form-group">
             <label>Create Password</label>
                 <input type="password" name="password" class="form-control" ng-model="newUser.password" required id="passwordIn">
             </div>
-            <button type="submit" class="btn btn-primary" ng-disabled="registerUser.$invalid" id="createUser">Submit</button>
+            <button type="submit" class="btn btn-primary" ng-disabled="registerUser.$invalid" id="createUser">Create User</button>
         </form>	</div>
 
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-<script src="services/signIn.js"></script>
 
 </body>

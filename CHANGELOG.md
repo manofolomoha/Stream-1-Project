@@ -8,7 +8,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 - currently working on sign-in functionality.
 
 ##todo
-- clean-up signInDisplay.js to add and remove classes, instead of what it currently is
+- add post-creation functionality
+- remove superfluous code and files
+
+##[0.6.1]
+###Added
+- a dedicated sign-in page (Incomplete)
+
+###fixed
+- multiple error messages to do with firebase and the log in form
 
 ##[0.6.0]
 ###Added

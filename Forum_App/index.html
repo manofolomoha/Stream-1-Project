@@ -13,13 +13,16 @@
 	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/viewPostMobile.css">
 	<link rel="stylesheet" media="screen and (min-device-width: 601px)" type="text/css" href="css/createPost.css">
 	<link rel="stylesheet" media="screen and (max-device-width: 600px)" type="text/css" href="css/createPostMobile.css">
-	<link rel="stylesheet" type="text/css" href="css/signUp.css">
+	<link rel="stylesheet" type="text/css" href="css/signUpPage.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/signUp.css">-->
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 </head>
 
 <body>
+
+<!--desktop and mobile navigation-->
 <div id="navBar">
 	<div id="homeButton">
 		<a ui-sref="/"><span class="glyphicon glyphicon-home mobileNavigation" id="mobileHome"></span></a>
@@ -30,10 +33,12 @@
 	</div>
 	<div id="logIn">
 		<span class="mobileNavigation glyphicon glyphicon-user mobileNavigation" id="mobileUser"></span>
-		<p class="button">Log In</p>
+		<a ui-sref="logIn"><p class="button">Log In</p></a>
 	</div>
 </div>
 
+<!--sign-in popup-->
+<!--
 <div id="signIn" class="grey">
 	<div id="close">
 		<span class="glyphicon glyphicon-remove" id="closeCross"></span>
@@ -42,7 +47,8 @@
 	<div id="signInSelect"><p class="selectorText">Sign in</p></div>
 	<div id="signUpSelect"><p class="selectorText">Sign up</p></div>
 	<div id="signInSheet">
-		<form name="loginUser" ng-submit="loginUser()" novalidate>
+
+	<form name="existingUser" ng-submit="loginUser()" novalidate>
             <div class="form-group">
                 <label>Name</label>
                     <input type="text" name="name" class="form-control" ng-model="user.username" required>
@@ -55,7 +61,7 @@
         </form>
 	</div>
 	<div id="signUpSheet">
-		<form name="registerUser" ng-submit="registerUser()" novalidate>
+		<form name="newUser" ng-submit="registerUser()" novalidate>
             <div class="form-group">
                 <label>Create Username</label>
                     <input type="text" name="name" class="form-control" ng-model="newUser.username" required>
@@ -68,29 +74,18 @@
         </form>	
     </div>
 	</div>
-</div>
+</div>-->
+
+<!--templade area-->
 <div ui-view>
 </div>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDGmOUEr8uXOb05m9MpmdNZcwSr0H5fOQc",
-    authDomain: "forum-app-17081.firebaseapp.com",
-    databaseURL: "https://forum-app-17081.firebaseio.com",
-    storageBucket: "forum-app-17081.appspot.com",
-    messagingSenderId: "483040706899"
-  };
-</script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="services/app.js"></script>
-<script src="services/signInDisplay.js"></script>
 <script src="services/newPost.js"></script>
 <script src="services/signIn.js"></script>
-
 </body>
 
 </html>
