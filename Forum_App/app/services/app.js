@@ -15,18 +15,18 @@ forumApp.config(function($stateProvider) {
 
     $stateProvider.state('/', {
     	url: '/home',
-        templateUrl: 'view/home.html',
+        templateUrl: 'app/view/home.html',
     })
 
     .state('newPost', {
     	url: '/new_post',
-    	templateUrl: 'view/createPost.html',
+    	templateUrl: 'app/view/createPost.html',
     	controller: 'postController',
     })
 
     .state('logIn', {
         url: '/LogIn',
-        templateUrl: 'view/signIn.html',
+        templateUrl: 'app/view/signIn.html',
         controller: 'loginController',
     })
 });
